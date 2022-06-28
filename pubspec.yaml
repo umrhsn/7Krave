@@ -21,6 +21,15 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  fonts:
+    - family: Product Sans
+      fonts:
+        - asset: fonts/Product Sans Bold.ttf
+        - asset: fonts/Product Sans Bold Italic.ttf
+        - asset: fonts/Product Sans Italic.ttf
+        - asset: fonts/Product Sans Regular.ttf
+          style: normal
+
   assets:
     - assets/icon/
     - assets/logo/
