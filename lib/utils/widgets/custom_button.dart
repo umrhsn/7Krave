@@ -19,8 +19,8 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     Key? key,
     this.alignment = Alignment.center,
-    this.outerPadding = const EdgeInsets.all(15.0),
-    this.innerPadding = const EdgeInsets.all(15.0),
+    this.outerPadding = EdgeInsets.zero,
+    this.innerPadding = EdgeInsets.zero,
     this.height = 70,
     this.minWidth = double
         .infinity, // set to 0 to wrap content, set to null to have the default width
@@ -39,25 +39,22 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: alignment,
-      child: Padding(
-        padding: outerPadding,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(borderRadius),
-          child: MaterialButton(
-            height: height,
-            minWidth: minWidth,
-            padding: innerPadding,
-            onPressed: () {
-              onPressed;
-            },
-            elevation: elevation,
-            color: buttonColor,
-            child: Text(isCapitalized ? text.toUpperCase() : text,
-                style: TextStyle(
-                    fontSize: fontSize,
-                    fontWeight: fontWeight,
-                    color: textColor)),
-          ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(borderRadius),
+        child: MaterialButton(
+          height: height,
+          minWidth: minWidth,
+          padding: innerPadding,
+          onPressed: () {
+            onPressed;
+          },
+          elevation: elevation,
+          color: buttonColor,
+          child: Text(isCapitalized ? text.toUpperCase() : text,
+              style: TextStyle(
+                  fontSize: fontSize,
+                  fontWeight: fontWeight,
+                  color: textColor)),
         ),
       ),
     );

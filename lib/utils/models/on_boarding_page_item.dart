@@ -16,37 +16,32 @@ class OnBoardingPageItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30.0),
-          child: Image(image: AssetImage(assetImagePath)),
+        Image(
+          image: AssetImage(assetImagePath),
+          height: height * 0.43,
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
-          child: Center(
-              child: Text(
-            leadingMessage,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
-          )),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
-          child: Center(
-              child: Padding(
-            padding: const EdgeInsets.only(top: 15.0),
+        Center(
             child: Text(
-              descriptionMessage,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 17,
-                  color: Colors.grey),
-            ),
-          )),
-        )
+          leadingMessage,
+          textAlign: TextAlign.center,
+          style:
+              TextStyle(fontWeight: FontWeight.bold, fontSize: height * 0.035),
+        )),
+        SizedBox(height: 10),
+        Center(
+            child: Text(
+          descriptionMessage,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: height * 0.024,
+              color: Colors.grey),
+        )),
       ],
     );
   }
