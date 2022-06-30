@@ -49,7 +49,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             Expanded(
               flex: 40, // FIXME
               child: PageView(
-                controller: pageController,
+                controller:
+                    pageController, // TODO: fix page controller not working on older devices like pixel 2
                 children: const [
                   OnBoardingPageItem(
                       assetImagePath: 'assets/images/sammy_bicycle.png',
