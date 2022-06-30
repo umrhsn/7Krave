@@ -1,8 +1,6 @@
 # 7Krave
 
-A new Flutter project.
-
-![Screenshot_20220630_185841](https://user-images.githubusercontent.com/55505500/176735373-99547838-1fff-4a9f-a3a3-c97163c3f433.png)
-![Screenshot_20220630_185850](https://user-images.githubusercontent.com/55505500/176735388-416873fc-517f-4f81-8903-ed20bb4b76b5.png)
-![Screenshot_20220630_185859](https://user-images.githubusercontent.com/55505500/176735408-4a9b612f-c2e9-4cfe-b24f-bf24824b8f4a.png)
-![Screenshot_20220630_185907](https://user-images.githubusercontent.com/55505500/176735419-ab5157bd-cfa2-4df4-a045-ef5db243ef31.png)
+![Screenshot_20220630_190133](https://user-images.githubusercontent.com/55505500/176735775-23b6e5c8-be0f-432e-98cc-f88c0fa25456.png)
+![Screenshot_20220630_190142](https://user-images.githubusercontent.com/55505500/176735784-55612c04-2ff2-4fd4-9ce1-1f17cc9321d4.png)
+![Screenshot_20220630_190158](https://user-images.githubusercontent.com/55505500/176735791-c6fbdfc8-dbc6-4d11-b720-b64ee9d1e6d6.png)
+![Uploading Screenshot_20220630_190204.png…]()
