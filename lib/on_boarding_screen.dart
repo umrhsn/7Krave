@@ -26,7 +26,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
     return Scaffold(
         body: SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -47,8 +47,9 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   height: height * 0.033),
             ),
             Expanded(
-              flex: 60, // FIXME
+              flex: 40, // FIXME
               child: PageView(
+                controller: pageController,
                 children: const [
                   OnBoardingPageItem(
                       assetImagePath: 'assets/images/sammy_bicycle.png',

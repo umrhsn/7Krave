@@ -18,7 +18,7 @@ class OnBoardingPageItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Image(
@@ -30,7 +30,7 @@ class OnBoardingPageItem extends StatelessWidget {
           leadingMessage,
           textAlign: TextAlign.center,
           style:
-              TextStyle(fontWeight: FontWeight.bold, fontSize: height * 0.035),
+              TextStyle(fontWeight: FontWeight.bold, fontSize: height * 0.03),
         )),
         SizedBox(height: 10),
         Center(
@@ -39,7 +39,7 @@ class OnBoardingPageItem extends StatelessWidget {
           textAlign: TextAlign.center,
           style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: height * 0.024,
+              fontSize: height * 0.018,
               color: Colors.grey),
         )),
       ],
