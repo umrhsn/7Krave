@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
   final Alignment alignment;
@@ -7,7 +8,6 @@ class CustomButton extends StatelessWidget {
   final double height;
   final double? minWidth;
   final double elevation;
-  final double fontSize;
   final double borderRadius;
   final FontWeight fontWeight;
   final Color buttonColor;
@@ -21,11 +21,10 @@ class CustomButton extends StatelessWidget {
     this.alignment = Alignment.center,
     this.outerPadding = EdgeInsets.zero,
     this.innerPadding = EdgeInsets.zero,
-    this.height = 70,
+    required this.height,
     this.minWidth = double
         .infinity, // set to 0 to wrap content, set to null to have the default width
     this.elevation = 0,
-    this.fontSize = 17,
     this.borderRadius = 12.0,
     this.fontWeight = FontWeight.bold,
     this.buttonColor = Colors.teal,
@@ -52,9 +51,7 @@ class CustomButton extends StatelessWidget {
           color: buttonColor,
           child: Text(isCapitalized ? text.toUpperCase() : text,
               style: TextStyle(
-                  fontSize: fontSize,
-                  fontWeight: fontWeight,
-                  color: textColor)),
+                  fontSize: 16.sp, fontWeight: fontWeight, color: textColor)),
         ),
       ),
     );
